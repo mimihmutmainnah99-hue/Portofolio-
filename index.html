@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SuratDigital - Buat Surat Online</title>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* NAVBAR */
+  nav {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #1abc9c;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1abc9c, #3498db);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    background: white;
+    color: #3498db;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn:hover {
+    background: #ecf0f1;
+    transform: translateY(-2px);
+  }
+
+  /* SECTION */
+  section {
+    padding: 4rem 5%;
+  }
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+  }
+
+  /* FITUR */
+  .fitur-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+
+  .card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  /* TENTANG */
+  .tentang {
+    background: #ecf0f1;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .tentang-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .tentang-img {
+    flex: 1;
+    min-width: 300px;
+    height: 300px;
+    background: #bdc3c7;
+    border-radius: 12px;
+  }
+
+  /* KONTAK */
+  form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  }
+
+  form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+
+  /* FOOTER */
+  footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  /* RESPONSIVE */
+  @media(max-width: 768px) {
+    nav ul { display: none; }
+    .hero h1 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">SuratDigital</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#fitur">Fitur</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Buat Surat Resmi dalam 1 Menit</h1>
+    <p>Template surat lamaran, undangan, dinas. Tinggal edit dan download.</p>
+    <a href="#fitur" class="btn">Mulai Sekarang</a>
+  </section>
+
+  <section id="fitur">
+    <h2 class="section-title">Fitur Unggulan</h2>
+    <div class="fitur-grid">
+      <div class="card">
+        <div class="card-icon">📄</div>
+        <h3>100+ Template</h3>
+        <p>Surat resmi, niaga, pribadi. Semua ada.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚡</div>
+        <h3>Super Cepat</h3>
+        <p>Isi data → Download PDF. Selesai.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Aman & Privat</h3>
+        <p>Data kamu tidak kami simpan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tentang" id="tentang">
+    <div class="tentang-text">
+      <h2 class="section-title">Tentang Kami</h2>
+      <p>SuratDigital hadir untuk memudahkan kamu membuat surat tanpa ribet format. Cocok untuk pelajar, mahasiswa, dan pekerja. Dibuat di Indonesia untuk Indonesia.</p>
+    </div>
+    <div class="tentang-img"></div>
+  </section>
+
+  <section id="kontak">
+    <h2 class="section-title">Hubungi Kami</h2>
+    <form>
+      <input type="text" placeholder="Nama Kamu" required>
+      <input type="email" placeholder="Email Kamu" required>
+      <textarea rows="5" placeholder="Pesan..." required></textarea>
+      <button type="submit" class="btn">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 SuratDigital. Dibuat dengan ❤️ di Bojonggambir</p>
+  </footer>
+
+</body>
+  </html>
